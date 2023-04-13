@@ -3,5 +3,5 @@ function myFirstFunction() {
 }
 
 function mySecondFunction() {
-	return "a";
+	return "b";
 }
