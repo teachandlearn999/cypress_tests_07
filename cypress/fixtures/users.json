@@ -1,0 +1,7 @@
+{
+    "users": {
+        "userId" : "admin",
+        "description" : "Hello, user. This is my description."
+    }
+
+}
