@@ -1,12 +1,6 @@
 /// <reference types="cypress" />
 
 describe("Cypress_Tests_07", () => {
-    beforeEach(() => {
-        cy.visit("http://localhost:8080/login?from=%2F");
-        cy.get("#j_username").type("admin");
-        cy.get('input[name="j_password"]').type("password");
-        cy.get('button[name="Submit"]').click();
-    });
 
     it("Checking Logo", () => {
         cy.get("#jenkins-name-icon").should("have.attr", "src").should("include", "title.svg");
