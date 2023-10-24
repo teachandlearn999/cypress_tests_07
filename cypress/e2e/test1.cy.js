@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe("Test", () => {
+describe("Cypress_Tests_07", () => {
     beforeEach(() => {
         cy.visit("http://localhost:8080/login?from=%2F");
         cy.get("#j_username").type("admin");
