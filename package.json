@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/teachandlearn999/cypress_tests_07#readme",
   "devDependencies": {
-    "cypress": "^13.3.2"
+    "cypress": "^13.3.3"
   }
 }
