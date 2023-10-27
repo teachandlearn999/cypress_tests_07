@@ -7,7 +7,7 @@ describe('Header: verify that Logout button clickable and redirected to login pa
             .should('exist')
             .and('have.text','log out').click()
         cy.url().should('contain', 'http://localhost:8080/login')
-        cy.get('#loginIntroDefault').should('have.text', logInPage.loginPageHeader)
+        cy.get('div.app-sign-in-register__content-inner h1').should('have.text', logInPage.loginPageHeader)
     })
 })
 
