@@ -1,0 +1,9 @@
+{
+    "userFormFields" : {
+        "password1": "1234",
+        "password2": "1234",
+        "fullname": "Anna Rogers",
+        "email" : "qa@qa.com",
+        "errorNoUserName": "is prohibited as a username for security reasons."
+    }    
+}
