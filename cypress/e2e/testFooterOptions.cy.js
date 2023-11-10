@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 import footerData from "../fixtures/footerData.json";
 
-describe("Footer >Options>Redirections", () => {
-  it.only("US_15.03.001 | Verify Jenkins version in Footer and color", () => {
+describe("Footer- test Footer Options", () => {
+  it("US_15.03.001 | Verify Jenkins version in Footer and color", () => {
     cy.get(".jenkins_ver")
 
       .should("be.visible")
