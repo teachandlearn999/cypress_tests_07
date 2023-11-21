@@ -1,11 +1,12 @@
 
 import buildTriggersOptions from "../fixtures/buildTriggersOptions.json"
+import freestyleProjectData from "../fixtures/freestyleProjectData.json"
 
 describe('Verify Help Icons Names', () => {
 
     beforeEach(function () {
         cy.get('a[href="/view/all/newJob"]').click();
-        cy.get("#name").type("Freestyle");
+        cy.get("#name").type(freestyleProjectData.projectName);
         cy.get(".hudson_model_FreeStyleProject").click();
         cy.get("#ok-button").click();
         cy.get("#build-triggers").parent().find('.optionalBlock-container').as('list')
@@ -26,8 +27,8 @@ describe('Verify Help Icons Names', () => {
     afterEach(function () {
 
         cy.get(".logo a[href='/']").click()
-        cy.get('#job_Freestyle a[href="job/Freestyle/"]').click();
-        cy.get('a[data-url="/job/Freestyle/doDelete"]').click();
+        cy.get(`#job_${freestyleProjectData.projectName} a[href="job/${freestyleProjectData.projectName}/"]`).click();
+        cy.get(`a[data-url="/job/${freestyleProjectData.projectName}/doDelete"]`).click();
     });
 })
 
