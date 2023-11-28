@@ -1,3 +1,4 @@
+import FreestyleProjectStatusPage from "./FreestyleProjectStatusPage";
 import NewJobPage from "./NewJobPage";
 //import projectData from "../fixtures/pom_fixtures/projectData.json";
 
@@ -14,6 +15,10 @@ class HomePage {
         return new NewJobPage();
     }
 
+    clickProjectNameLink (name) {
+        this.getProjectNameLink(name).click();
+        return new FreestyleProjectStatusPage()
+    }
 
 }
 export default HomePage
